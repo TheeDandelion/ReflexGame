@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Reflex Game</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	      crossorigin="anonymous">
+</head>
+<body>
+
+<!---->
+<div class="container main">
+	<a href="/games" class="closebtn"><i class="fas fa-sign-out-alt"></i></a>
+	<div class="container">
+		<div class="container d-flex justify-content-center align-items-center">
+			<img src="Image/arrow.png" alt="" class="arrow" style="">
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="rightSection">
+			<div class="settings">
+				<h3>Reflex Game</h3>
+				<label for="thirty">30s</label>
+				<input type="checkbox" name="thirty" id="thirty">
+				<label for="sixty">60s</label>
+				<input type="checkbox" name="sixty" id="sixty" checked>
+				<label for="ninety">90s</label>
+				<input type="checkbox" name="ninety" id="ninety">
+				<div class="level">
+					<button class="btn btn-success mb-2" onclick="start(3000)">Level 1</button>
+					<button class="btn btn-success mb-2" onclick="start(2000)">Level 2</button>
+					<button class="btn btn-success mb-2" onclick="start(1500)">Level 3</button>
+				</div>
+			</div>
+			<div class="timer d-none">
+				<p class="countdown"></p>
+				<div class="stop">
+					<button class="stopButton btn btn-danger mb-2">STOP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div>
+	<audio id="sound1">
+		<source src="sounds/punch1.mp3">
+	</audio>
+	<audio id="sound2">
+		<source src="sounds/punch2.mp3">
+	</audio>
+	<audio id="bell">
+		<source src="sounds/bell.mp3">
+	</audio>
+	<audio id="go">
+		<source src="sounds/start.mp3">
+	</audio>
+	<audio id="countdown">
+		<source src="sounds/countdown.mp3">
+	</audio>
+</div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
